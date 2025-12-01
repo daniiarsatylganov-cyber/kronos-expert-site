@@ -24,6 +24,26 @@
   @media(max-width:800px){header{flex-direction:column;align-items:flex-start}}
   .logo svg{height:64px;width:auto}
   a{color:#1F4E79}
+  /* Sticky navigation */
+.main-nav {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 999;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-nav a {
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1F4E79;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 <body>
@@ -39,7 +59,7 @@
 </div>
     </header>
 
-    <nav>
+    <nav class="main-nav">
       <a href="#about">About / О компании</a>
       <a href="#services">Services / Услуги</a>
       <a href="#projects">Projects / Проекты</a>
